@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-20T11:27:58.313Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36" etag="rqQCgmh2mnF__RXlBaQM" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-20T11:31:41.215Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36" etag="OfOVmu-cZNH-u3TbmqzL" version="20.2.5" type="github">
   <diagram id="v6MhGzl9Ut_vb9ysP9-F" name="Page-1">
     <mxGraphModel dx="1338" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -16,10 +16,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="1lAsEYCgAlX6sePm31HV-6" value="POSTS" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="870" y="50" width="250" height="130" as="geometry" />
+          <mxGeometry x="960" y="55" width="260" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="1lAsEYCgAlX6sePm31HV-7" value="+POST_ID(PK)&#xa;+USER_ID(FK TO  PROFILE.ROLL_NO)&#xa;+TEXT&#xa;+CREATED&#xa;+NO_OF_LIKES&#xa;+NO_OF_VIEWS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="1lAsEYCgAlX6sePm31HV-6">
-          <mxGeometry y="30" width="250" height="100" as="geometry" />
+        <mxCell id="1lAsEYCgAlX6sePm31HV-7" value="+POST_ID(PK)&#xa;+USER_ID(FK TO  PROFILE.ROLL_NO)&#xa;+TEXT&#xa;+CREATED&#xa;+NO_OF_LIKES&#xa;+NO_OF_VIEWS&#xa;+MEDIA" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="1lAsEYCgAlX6sePm31HV-6">
+          <mxGeometry y="30" width="260" height="120" as="geometry" />
         </mxCell>
         <mxCell id="1lAsEYCgAlX6sePm31HV-11" value="COMMENTS" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
           <mxGeometry x="110" y="450" width="240" height="110" as="geometry" />
@@ -58,7 +58,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="1lAsEYCgAlX6sePm31HV-77" value="LIKES" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="630" y="180" width="240" height="110" as="geometry" />
+          <mxGeometry x="680" y="180" width="240" height="110" as="geometry" />
         </mxCell>
         <mxCell id="1lAsEYCgAlX6sePm31HV-78" value="+LIKE_ID(PK)&#xa;+POST_ID(FK TO POSTS.POST_ID)&#xa;+USER_ID(FK TO  PROFILE.ROLL_NO)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="1lAsEYCgAlX6sePm31HV-77">
           <mxGeometry y="30" width="240" height="80" as="geometry" />
