@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-26T11:01:52.198Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36" etag="TWo2VaQNsQr7rPIgyGOF" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-26T11:34:56.274Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36" etag="PubcLgu8uFwEJAMGr1Lv" version="20.2.7" type="github">
   <diagram id="v6MhGzl9Ut_vb9ysP9-F" name="Page-1">
     <mxGraphModel dx="3438" dy="3349" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -272,13 +272,13 @@
         <mxCell id="7WxtvX7euv3PfZnyjlCn-1" value="TAG" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
           <mxGeometry x="1630" y="-370" width="170" height="129" as="geometry" />
         </mxCell>
-        <mxCell id="7WxtvX7euv3PfZnyjlCn-2" value="+ID(PK)&#xa;+TOPIC&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="7WxtvX7euv3PfZnyjlCn-1">
+        <mxCell id="7WxtvX7euv3PfZnyjlCn-2" value="+ID(PK)&#xa;+TOPIC&#xa;CONSTRAINTS:-&#xa; UNIQUE(ID, TOPIC)&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="7WxtvX7euv3PfZnyjlCn-1">
           <mxGeometry y="30" width="170" height="99" as="geometry" />
         </mxCell>
         <mxCell id="7WxtvX7euv3PfZnyjlCn-6" value="Ques_Tags" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
           <mxGeometry x="1880" y="-70" width="170" height="129" as="geometry" />
         </mxCell>
-        <mxCell id="7WxtvX7euv3PfZnyjlCn-7" value="+ID(PK)&#xa;+QID(FK to QID.ID )" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="7WxtvX7euv3PfZnyjlCn-6">
+        <mxCell id="7WxtvX7euv3PfZnyjlCn-7" value="+ID(PK)&#xa;+QID(FK to QID.ID )&#xa;CONSTRAINTS:- &#xa;UNIQUE(TAG_ID, QID)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="7WxtvX7euv3PfZnyjlCn-6">
           <mxGeometry y="30" width="170" height="99" as="geometry" />
         </mxCell>
         <mxCell id="7WxtvX7euv3PfZnyjlCn-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="7WxtvX7euv3PfZnyjlCn-8" target="7WxtvX7euv3PfZnyjlCn-2">
@@ -287,7 +287,7 @@
         <mxCell id="7WxtvX7euv3PfZnyjlCn-8" value="Posts_Tags" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
           <mxGeometry x="1330" y="-280" width="220" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="7WxtvX7euv3PfZnyjlCn-9" value="+TAG_ID(FK TO TAG.ID)&#xa;+POST_ID(FK TO POSTS.ID)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="7WxtvX7euv3PfZnyjlCn-8">
+        <mxCell id="7WxtvX7euv3PfZnyjlCn-9" value="+TAG_ID(FK TO TAG.ID)&#xa;+POST_ID(FK TO POSTS.ID)&#xa;CONSTRAINTS:- UNIQUE(TAG_ID, &#xa;                                POST_ID)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="7WxtvX7euv3PfZnyjlCn-8">
           <mxGeometry y="30" width="220" height="100" as="geometry" />
         </mxCell>
         <mxCell id="7WxtvX7euv3PfZnyjlCn-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="7WxtvX7euv3PfZnyjlCn-9" target="1lAsEYCgAlX6sePm31HV-6">
@@ -302,7 +302,7 @@
         <mxCell id="7WxtvX7euv3PfZnyjlCn-17" value="BLOG_TAGS" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
           <mxGeometry x="1950" y="-370" width="170" height="129" as="geometry" />
         </mxCell>
-        <mxCell id="7WxtvX7euv3PfZnyjlCn-18" value="+TAG_ID(FK TO TAG.ID)&#xa;+BLOG_ID(FK to BLOGS.ID )" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="7WxtvX7euv3PfZnyjlCn-17">
+        <mxCell id="7WxtvX7euv3PfZnyjlCn-18" value="+TAG_ID(FK TO TAG.ID)&#xa;+BLOG_ID(FK to BLOGS.ID )&#xa;CONSTRAINTS:- &#xa;UNIQUE(TAG_ID, BLOG_ID)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="7WxtvX7euv3PfZnyjlCn-17">
           <mxGeometry y="30" width="170" height="99" as="geometry" />
         </mxCell>
         <mxCell id="7WxtvX7euv3PfZnyjlCn-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="7WxtvX7euv3PfZnyjlCn-18" target="7WxtvX7euv3PfZnyjlCn-2">
@@ -317,7 +317,7 @@
         <mxCell id="7WxtvX7euv3PfZnyjlCn-21" value="User_Tags" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
           <mxGeometry x="607" y="-160" width="220" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="7WxtvX7euv3PfZnyjlCn-22" value="+TAG_ID(FK TO TAG.ID)&#xa;+UID (FK TO PROFILE.ID)&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="7WxtvX7euv3PfZnyjlCn-21">
+        <mxCell id="7WxtvX7euv3PfZnyjlCn-22" value="+TAG_ID(FK TO TAG.ID)&#xa;+UID (FK TO PROFILE.ID)&#xa;CONSTRAINTS:-&#xa;UNIQUE(TAG_ID, UID)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="7WxtvX7euv3PfZnyjlCn-21">
           <mxGeometry y="30" width="220" height="100" as="geometry" />
         </mxCell>
         <mxCell id="7WxtvX7euv3PfZnyjlCn-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="7WxtvX7euv3PfZnyjlCn-22" target="1lAsEYCgAlX6sePm31HV-1">
@@ -350,10 +350,10 @@
           <mxGeometry y="30" width="240" height="90" as="geometry" />
         </mxCell>
         <mxCell id="7WxtvX7euv3PfZnyjlCn-38" value="CHANNEL_TAGS" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="1291" y="-690" width="220" height="130" as="geometry" />
+          <mxGeometry x="1291" y="-690" width="259" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="7WxtvX7euv3PfZnyjlCn-39" value="+TAG_ID(FK TO TAG.ID)&#xa;+CH_ID(FK TO CHANNELS.ID)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="7WxtvX7euv3PfZnyjlCn-38">
-          <mxGeometry y="30" width="220" height="100" as="geometry" />
+        <mxCell id="7WxtvX7euv3PfZnyjlCn-39" value="+TAG_ID(FK TO TAG.ID)&#xa;+CH_ID(FK TO CHANNELS.ID)&#xa;CONSTRAINTS:- UNIQUE(TAG_ID, CH_ID)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="7WxtvX7euv3PfZnyjlCn-38">
+          <mxGeometry y="30" width="259" height="100" as="geometry" />
         </mxCell>
         <mxCell id="7WxtvX7euv3PfZnyjlCn-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.583;entryY=0.008;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7WxtvX7euv3PfZnyjlCn-39" target="7WxtvX7euv3PfZnyjlCn-1">
           <mxGeometry relative="1" as="geometry" />
